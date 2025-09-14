@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Bài 1: Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between; /* Logo trái, Menu giữa, Button phải */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #007acc;
+  color: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn {
+  background: #ff9800;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===== Bài 2: Layout Flexbox ===== */
+.layout {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.content {
+  flex: 3;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.footer {
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  background: #007acc;
+  color: white;
+  border-radius: 8px;
+}
+
+/* ===== Bài 3: Gallery ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* khoảng cách đều nhau */
+  margin: 20px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
