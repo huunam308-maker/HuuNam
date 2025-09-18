@@ -3,122 +3,937 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Buoi 4</title>
+    <title>Shop demo</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="thongtin">
-      <h1>Đăng kí thông tin</h1>
-      <p>Vui lòng điền đầy đủ thông tin</p>
+    <header class="header">
+      <div class="grid_wide">
+        <!--navbar-->
+        <div class="header__navbar hide-on-mobile-tablet">
+          <ul class="header__navbar--list">
+            <li
+              class="header__navbar--list--item header__navbar--list--item--qr header__navbar--list--item--separate"
+            >
+              Truy cập website $maker
+            </li>
+            <li class="header__navbar--list--item">Kết nối</li>
+            <li class="header__navbar--list--item">
+              <i class="fab fa-facebook-square"></i>
+            </li>
+            <li class="header__navbar--list--item">
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+
+          <ul class="header__navbar--list">
+            <li
+              class="header__navbar--list--item header__navbar--list--item--has"
+            >
+              <a href="" class="header__navbar--list--item--link">
+                <i class="far fa-bell header__navbar--icon"></i>
+                Thông báo
+              </a>
+              <div class="header__notify">
+                <div class="header__notify--header">
+                  <h3>Thông báo mới nhận</h3>
+                </div>
+                <ul class="header__notify--list">
+                  <li class="header__notify--item">
+                    <a href="" class="header__notify--link">
+                      <img
+                        src="https://smakerclothing.com/thumb/320x300/1/upload/sanpham/_dsc6630-4974.jpg"
+                        alt=""
+                        class="header__notify--img"
+                      />
+                      <div class="header__notify--info">
+                        <span class="header__notify--name">Sản phẩm mới</span>
+                        <span class="header__notify--desc"
+                          >Mô tả sản phẩm mới ra mắt</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header__notify--list">
+                  <li class="header__notify--item">
+                    <a href="" class="header__notify--link">
+                      <img
+                        src="https://smakerclothing.com/thumb/320x300/1/upload/sanpham/_dsc1072-6344.jpg"
+                        alt=""
+                        class="header__notify--img"
+                      />
+                      <div class="header__notify--info">
+                        <span class="header__notify--name">Sản phẩm mới</span>
+                        <span class="header__notify--desc"
+                          >Mô tả sản phẩm mới ra mắt</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header__notify--list">
+                  <li class="header__notify--item">
+                    <a href="" class="header__notify--link">
+                      <img
+                        src="https://smakerclothing.com/thumb/320x300/1/upload/sanpham/_dsc7136-7987.jpg"
+                        alt=""
+                        class="header__notify--img"
+                      />
+                      <div class="header__notify--info">
+                        <span class="header__notify--name">Sản phẩm mới</span>
+                        <span class="header__notify--desc"
+                          >Mô tả sản phẩm mới ra mắt</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="header__notify--list">
+                  <li class="header__notify--item">
+                    <a href="" class="header__notify--link">
+                      <img
+                        src="https://smakerclothing.com/thumb/320x300/1/upload/sanpham/_dsc8420-6545.jpg"
+                        alt=""
+                        class="header__notify--img"
+                      />
+                      <div class="header__notify--info">
+                        <span class="header__notify--name">Sản phẩm mới</span>
+                        <span class="header__notify--desc"
+                          >Mô tả sản phẩm mới ra mắt</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="header__notify--footer">
+                  <a href="" class="header__notify--footer--btn">Xem tất cả</a>
+                </div>
+              </div>
+            </li>
+            <li class="header__navbar--list--item">
+              <i class="far fa-question-circle"></i>
+              <a href="" class="header__navbar--list--item--link">Trợ giúp</a>
+            </li>
+            <!-- <li class="header__navbar--list--item header__navbar--list--item--strong">Đăng ký</li>
+<li class="header__navbar--list--item header__navbar--list--item--strong">Đăng nhập</li> -->
+
+            <li class="header__navbar--list--item header__navbar--user">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG59ki8vaWERyNtrl8_4Wd1v4d9wF3BVVuVA&s"
+                alt=""
+                class="header__navbar--user--img"
+              />
+              <span class="header__navbar--user--name">Nguyễn Hữu Nam</span>
+
+              <ul class="header__navbar--user--menu">
+                <li class="header__navbar--user--item" id="display__modal">
+                  <a href="">Tài khoản của tôi</a>
+                </li>
+                <li class="header__navbar--user--item">
+                  <a href="">Địa chỉ của tôi</a>
+                </li>
+                <li class="header__navbar--user--item">
+                  <a href="">Đơn mua</a>
+                </li>
+                <li class="header__navbar--user--item">
+                  <a href="">Đăng xuất</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="app__container">
+      <div class="grid wide">
+        <div class="row app__content sm-gutter">
+          <div class="col l-2 m-0 c-0">
+            <nav class="category">
+              <h3 class="category__heading">
+                <i class="category__heading--icon fas fa-list"></i>
+                Danh mục
+              </h3>
+              <ul class="category__list">
+                <li class="category__item category__item--active">
+                  <a href="#" class="category__item--link">Trang điểm mặt</a>
+                </li>
+                <li class="category__item">
+                  <a href="#" class="category__item--link">Trang điểm môi</a>
+                </li>
+                <li class="category__item">
+                  <a href="#" class="category__item--link">Trang điểm mắt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col l-10 m-12 c-12">
+            <div class="home__filter hide-on-mobile-tablet">
+              <span class="home__filter--label">Sắp xếp theo</span>
+              <button class="home__filter--btn btn">Phổ biến</button>
+              <button class="home__filter--btn btn btn__primary">
+                Mới nhất
+              </button>
+              <button class="home__filter--btn btn">Bán chạy</button>
+
+              <div class="select__input">
+                <span class="select__input--label">Giá</span>
+                <i class="fas fa-chevron-down"></i>
+
+                <ul class="select__input--list">
+                  <li class="select__input--item">
+                    <a href="" class="select__input--item--link">
+                      Giá: Thấp đến Cao
+                    </a>
+                  </li>
+                  <li class="select__input--item">
+                    <a href="" class="select__input--item--link">
+                      Giá: Cao đến Thấp
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="home__filter--page">
+                <span class="home__filter--page--number">
+                  <span class="home--filter--page--number--current">1</span>/14
+                </span>
+                <div class="home__filter--page--control">
+                  <a href="" class="home__filter--page--btn">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a href="" class="home__filter--page--btn">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Home product -->
+
+            <nav class="mobile__category">
+              <ul class="mobile__category--list">
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link">Kem Dưỡng Da</a>
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link">Sữa Rửa Mặt</a>
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link"
+                    >Kem Lót Nâng Tông</a
+                  >
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link"
+                    >Kem Dưỡng Vùng Mắt</a
+                  >
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link"
+                    >Tinh Chất Tái Sinh</a
+                  >
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link">Mascara</a>
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link">Son</a>
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link"
+                    >Kem Lót Nâng Tông</a
+                  >
+                </li>
+                <li class="mobile__category--list--item">
+                  <a href="" class="mobile__category--link">Nước Hoa Hồng</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="home__product">
+              <div class="grid wide">
+                <div class="row sm-gutter">
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Kem lót nâng tông Ohui Makeup Ultimate Brightening
+                        Lavender Primer SPF20/PA++
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.200.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1000.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold">88 đã bán</span>
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >10%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1618645481-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set nước hoa hồng Ohui Miracle Moisture Skin Softener
+                        Moist
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.300.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1.050.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >850 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >20%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1587707764-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set phấn phủ Ohui Ultimate Brightening Varnishing Pact
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.100.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1.000.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >200 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >20%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1580888419-myphamohui-lgvina.png);
+                        "
+                        ;=""
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set kem mắt tái sinh Ohui The First Geniture Eye Cream
+                        Edition Grand Blue
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.400.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1.100.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold">99 đã bán</span>
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >22%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1580889448-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set sữa rửa mặt Ohui Prime Gel Cleanser
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.100.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1000.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >243 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >10%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1611561880-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden Cushion
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.500.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1.200.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >856 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >20%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50+/PA++++ 50 ML
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.300.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1.200.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold">45 đã bán</span>
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >20%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1596535100-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set Son Whoo Luxury Lip Rouge màu mới tinh #88 hồng đỏ
+                        đất
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.100.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1000.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >422 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >10%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1591788607-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Set dưỡng ẩm whoo hồng gongjinhyang soo vital hydrating
+                        2PCS special set
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.200.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1.100.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >200 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >20%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <!-- Product item -->
+                    <a href="#" class="home__product--item">
+                      <div
+                        class="home__product--item--img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1585291439-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home__product--item--name">
+                        Bộ dưỡng trắng da Su:m37 Water-full Radiant 3pcs Set
+                      </h4>
+                      <div class="home__product--item--price">
+                        <span class="home__product--item--price--old"
+                          >1.300.000đ</span
+                        >
+                        <span class="home__product--item--price--current"
+                          >1000.000đ</span
+                        >
+                      </div>
+                      <div class="home__product--item--action">
+                        <span
+                          class="home__product--item--action--like home__product--item--action--liked"
+                        >
+                          <i
+                            class="home__product--item--action--like-icon-empty far home__product--item--action--like-icon fa-heart"
+                          ></i>
+                          <i
+                            class="home__product--item--action--like-icon-fill fas fa-heart"
+                          ></i>
+                        </span>
+                        <div class="home__product--item--action--rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <span class="home__product--item--sold"
+                          >400 đã bán</span
+                        >
+                      </div>
+                      <div class="home__product--item--origin">
+                        <span class="home__product--item--brand">Whoo</span>
+                        <span class="home__product--item--origin--name"
+                          >Nhật Bản</span
+                        >
+                      </div>
+                      <div class="home__product--item--favourite">
+                        <i class="fas fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="home__product--item--sale_off">
+                        <span class="home__product--item--sale_off--percent"
+                          >23%</span
+                        >
+                        <span class="home__product--item--sale_off--label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nagination -->
+
+            <ul class="nagination home__product--nagination">
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">
+                  <i class="nagination__item--icon fas fa-chevron-left"></i>
+                </a>
+              </li>
+              <li class="nagination__item nagination__item--active">
+                <a href="" class="nagination__item--link">1</a>
+              </li>
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">2</a>
+              </li>
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">3</a>
+              </li>
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">4</a>
+              </li>
+              <li class="nagination__item hide-on-mobile">
+                <a href="" class="nagination__item--link">5</a>
+              </li>
+              <li class="nagination__item hide-on-mobile">
+                <a href="" class="nagination__item--link">6</a>
+              </li>
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">...</a>
+              </li>
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">14</a>
+              </li>
+              <li class="nagination__item">
+                <a href="" class="nagination__item--link">
+                  <i class="nagination__item--icon fas fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul class="header__sort--bar">
+        <li class="header__sort--item">
+          <a href="" class="header__sort--link">Liên quan</a>
+        </li>
+        <li class="header__sort--item">
+          <a href="" class="header__sort--link">Mới nhất</a>
+        </li>
+        <li class="header__sort--item">
+          <a href="" class="header__sort--link">Bán chạy</a>
+        </li>
+        <li class="header__sort--item">
+          <a href="" class="header__sort--link">Giá</a>
+        </li>
+      </ul>
     </div>
-    <form class="register-form" action="#" method="post">
-      <h1>Thông tin đăng ký</h1>
-
-      <!-- Họ tên -->
-      <label for="name">Họ tên</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Nhập họ tên"
-        required
-      />
-
-      <!-- Email -->
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Nhập email"
-        required
-      />
-
-      <!-- Mật khẩu -->
-      <label for="password">Mật khẩu</label>
-      <input type="password" id="password" name="password" required />
-
-      <!-- Số điện thoại -->
-      <label for="phone">Số điện thoại</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="Nhập số điện thoại"
-      />
-
-      <!-- Ngày sinh -->
-      <label for="dob">Ngày sinh</label>
-      <input type="date" id="dob" name="dob" />
-
-      <!-- Giới tính -->
-      <label>Giới tính</label>
-      <input type="radio" id="male" name="gender" value="male" />
-      <label for="male">Nam</label>
-      <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Nữ</label>
-
-      <!-- Sở thích -->
-      <label>Sở thích</label>
-      <input type="checkbox" name="hobby" value="reading" /> Đọc sách
-      <input type="checkbox" name="hobby" value="travel" /> Du lịch
-      <input type="checkbox" name="hobby" value="music" /> Âm nhạc
-
-      <!-- Quốc gia -->
-      <label for="country">Quốc gia</label>
-      <select id="country" name="country">
-        <option value="">--Chọn quốc gia--</option>
-        <option value="vn">Việt Nam</option>
-        <option value="us">Mỹ</option>
-        <option value="jp">Nhật Bản</option>
-      </select>
-
-      <!-- Trình độ -->
-      <label for="education">Trình độ học vấn</label>
-      <input list="education-list" id="education" name="education" />
-      <datalist id="education-list">
-        <option value="Cao đẳng"></option>
-        <option value="Đại học"></option>
-        <option value="Thạc sĩ"></option>
-        <option value="Tiến sĩ"></option>
-      </datalist>
-
-      <!-- Upload file -->
-      <label for="avatar">Ảnh đại diện</label>
-      <input type="file" id="avatar" name="avatar" />
-
-      <!-- Màu yêu thích -->
-      <label for="color">Màu yêu thích</label>
-      <input type="color" id="color" name="color" />
-
-      <!-- Độ hài lòng -->
-      <label for="satisfaction">Độ hài lòng</label>
-      <input
-        type="range"
-        id="satisfaction"
-        name="satisfaction"
-        min="0"
-        max="10"
-      />
-
-      <!-- Website -->
-      <label for="website">Website cá nhân</label>
-      <input type="url" id="website" name="website" placeholder="https://" />
-
-      <!-- Số lượng -->
-      <label for="quantity">Số lượng đăng ký</label>
-      <input type="number" id="quantity" name="quantity" min="1" max="10" />
-
-      <!-- Lời nhắn -->
-      <label for="message">Lời nhắn</label>
-      <textarea id="message" name="message" rows="3"></textarea>
-
-      <!-- Input ẩn -->
-      <input type="hidden" name="token" value="123456" />
-
-      <!-- Nút submit/reset -->
-      <button type="submit">Đăng ký</button>
-      <input type="reset" value="Nhập lại" />
-    </form>
   </body>
 </html>
