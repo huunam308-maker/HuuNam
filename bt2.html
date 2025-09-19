@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký Sự Kiện</title>
+    <link rel="stylesheet" href="./bt2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng Ký Sự Kiện</h2>
+        <form action="#" method="post">
+            <label for="name">Họ tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+
+            <label>Sở thích:</label>
+            <input type="checkbox" id="sport" name="hobby" value="Thể thao">
+            <label for="sport">Thể thao</label>
+            <input type="checkbox" id="music" name="hobby" value="Âm nhạc">
+            <label for="music">Âm nhạc</label>
+            <input type="checkbox" id="travel" name="hobby" value="Du lịch">
+            <label for="travel">Du lịch</label>
+
+            <label for="country">Quốc gia:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Chọn quốc gia --</option>
+                <option value="vn">Việt Nam</option>
+                <option value="us">Mỹ</option>
+                <option value="jp">Nhật Bản</option>
+                <option value="kr">Hàn Quốc</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
